@@ -25,3 +25,9 @@ The application was developed using the following tools:
 - Vite: A build tool that provides a faster and leaner development experience for modern web projects.
 - Firebase: A platform that provides backend services, including Authentication and Firestore.
 - Material-UI (MUI): A popular React UI framework for faster and easier web development.
+
+# Useful Websites
+
+- Firebase (https://firebase.google.com/docs/firestore/quickstart?hl=pt-br#python_4)
+- React Native Firebase (https://rnfirebase.io/firestore/usage)
+- Free Code Campo (https://www.freecodecamp.org/news/how-to-use-the-firebase-database-in-react/)
