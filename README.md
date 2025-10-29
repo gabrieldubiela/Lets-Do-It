@@ -1,16 +1,27 @@
-# React + Vite
+# Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Let's Do It is a to-do application that organize tasks by projects. You can try at https://letsdoit-53749423-4f69b.web.app/
 
-Currently, two official plugins are available:
+To use the program need create an account and login in. First need create one or more projects. Then select the project to create the tasks. The tasks can be edit, excluded or sign as completed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The program connects to the Google Firebase platform using API keys. When a user creates, edits, or deletes a project or task, the program sends that information to the Firestore database. The database has security rules that check if the user is logged in and ensures they can only access their own data.
 
-## React Compiler
+The purpose of this program was to learn and practice using the java script to integrate to cloud database.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Cloud Database
 
-## Expanding the ESLint configuration
+The application uses Google Cloud Firestore, which is a NoSQL, document-based database provided by the Firebase platform. This allows the app to store and sync data in real-time.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The database is structured around users to ensure data privacy. It has a top-level collection called `users`. Each document within this collection is identified by a unique `userId` after a user authenticates. Inside each user's document, there are two sub-collections:
+- A `projects` collection to store the projects created by the user.
+- A `tasks` collection to store the tasks associated with those projects.
+This structure, enforced by security rules, guarantees that users can only read and write to their own data.
+
+# Development Environment
+
+The application was developed using the following tools:
+
+- React: A JavaScript library for building user interfaces.
+- Vite: A build tool that provides a faster and leaner development experience for modern web projects.
+- Firebase: A platform that provides backend services, including Authentication and Firestore.
+- Material-UI (MUI): A popular React UI framework for faster and easier web development.
