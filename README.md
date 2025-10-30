@@ -8,6 +8,8 @@ The program connects to the Google Firebase platform using API keys. When a user
 
 The purpose of this program was to learn and practice using the java script to integrate to cloud database.
 
+[To-do App with Cloud Database] (http://youtube.link.goes.here)
+
 # Cloud Database
 
 The application uses Google Cloud Firestore, which is a NoSQL, document-based database provided by the Firebase platform. This allows the app to store and sync data in real-time.
