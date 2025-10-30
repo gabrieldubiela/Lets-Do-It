@@ -8,7 +8,7 @@ The program connects to the Google Firebase platform using API keys. When a user
 
 The purpose of this program was to learn and practice using the java script to integrate to cloud database.
 
-[To-do App with Cloud Database] (http://youtube.link.goes.here)
+To-do App with Cloud Database (https://www.youtube.com/watch?v=bBCHR6G7Z6I)
 
 # Cloud Database
 
